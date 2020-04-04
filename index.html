@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Diner Fresh</title>
+    <meta name="author" content="Samuel Garcia">
+    <meta name="description" content="Restaurant website created with HTML5/CSS3/BOOTSTRAP4/JQuerry">
+    <meta name="keywords" content="food, restaurant, website">
+    <link rel="icon" href="img/logo.png" >
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!--JQuerry UI libraries-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top hidden" id="navBar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.PNG" width="25%" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="locations.html">Locations</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="reserve.html">Reserve</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Welcome-->
+<div class="container-fluid" id="bg-1">
+   <div style="height: 40%"></div>
+    <div class="row m">
+        <div class="col-md-8 offset-md-2 offset-sm-1">
+            <h1 class="slogan hidden">Where Flavor Meets Exelence</h1>
+            <button onclick="window.location.href='menu.html'" class="btn btn-outline-dark btn-lg hidden" id="btn-1">View Menu</button>
+            <button onclick="window.location.href='reserve.html'" class="btn btn-secondary btn-lg hidden" id="btn-2">Make Reservation</button>
+        </div>   
+    </div>
+</div> 
+    
+<!--Head Cheff-->
+ <div class="container-fluid jumbotron padding">
+    <div class="row">
+        <div class="col-3 offset-sm-2">
+            <img src="img/chef.jpg" height="400px" alt="Chef">
+        </div> 
+        
+        <div class="col-xl-4 col-md-8 offset-sm-2">
+            <h1 class="headline">Head Chef</h1>
+            <h3>Alex Smith</h3>
+            <p>Lorem ipsum dolor sit amet, sed cu viris option interesset, eum moderatius assueverit voluptatibus et. 
+                Minimum accusata sapientem cu vis. Antiopam accommodare in usu.</p>
+        </div>  
+    </div>
+</div>    
+    
+<!--Menu Overview-->
+<div class="container-fluid padding">
+    <!--Drinks-->
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <h1 class="headline">You Name It, We Have It</h1>
+            <p>Cu scripta tacimates vis, quas laboramus deseruisse cu mel.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 offset-md-1">
+            <h3 class="headline">Drinks</h3>
+            <br>
+            <h5>Royal Apple Buzz $19</h5>
+            <p>This drink combines Crown Royal, apple schnapps, and cranberry juice to create a delicious sweet and sour fruit drink.</p>
+            <hr class="my-4">
+            
+            <h5>Maple Maverick Splash $10</h5>
+            <p>This drink is sweet and sour, just like a freshly picked green apple.</p>
+            <hr class="my-4">
+            
+            <h5>Berry Lady Sunrise $14</h5>
+            <p>Fresh blackberries, strawberries, and blueberries mixed for a sweet, colorful twist on a refreshing tequila cocktail. </p>
+        </div>
+       
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+            <img class="img-fluid" src="img/drinks-1.jpg" alt="Drinks 1">
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+            <img class=" img-fluid" src="img/drinks-2.jpg" alt="Drinks">
+        </div>
+    </div>
+
+    
+    <!--Dinner-->
+    <div class="row padding">
+        <div class="col-lg-3 col-md-6 offset-md-1">
+            <h3 class="headline">Dinner(3-Course $79)</h3>
+            <br>
+            <h5>Cobb salad</h5>
+            <p>Organic mixed greens, bacon, turkey breast, egg, tomatoes, avocado and Bleu cheese crumbles with ranch dressing.</p>
+            <hr class="my-4">
+            
+            <h5>Creamy Shrimp Scampi</h5>
+            <p>Sauteed Shrimp  with garlic, fresh basil a white wine lemon butter sauce, served over pasta.</p>
+            <hr class="my-4">
+            
+            <h5>Ceviche</h5>
+            <p>Raw seafood marinated in citrus juice until "cooked" served cold, garnished with pico and lime.</p>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+            <img class=" img-fluid" src="img/plate-1.jpg" alt="Plate 1">
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+            <img class=" img-fluid" src="img/plate-3.jpg" alt="Plate 2">
+        </div>
+    </div>
+    
+    <br><br>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button onclick="window.location.href='menu.html'" class="btn btn-secondary btn-lg" >Check The Whole Menu</button>
+        </div>
+    </div>
+</div>
+
+<!--Reservation Overview-->
+<div class="container-fluid mt-5" id="bg-2">
+   <div style="height: 40%"></div>
+    <div class="row">
+        <div class="col-md-8 col-sm-12 offset-md-2">
+            <h1 class="headline" id="reservation">Reserve</h1>
+            <h4 id="reservation">Skip The Line, Reserve a Table</h4>
+            <button onclick="window.location.href='reserve.html'" class="btn btn-secondary btn-lg" >Make a Reservation</button>
+        </div>   
+    </div>
+</div>
+
+<!--Check Locations-->
+<div class="container-fluid jumbotron padding">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>Open 24/7</h1>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+            <p>Duo aperiri oblique ad, sale postulant sit cu. Has movet salutatus at, id prompta referrentur quo. Pri illud tantas dicunt ne, 
+            te epicuri elaboraret ius, eum ad dicta iuvaret petentium. Errem causae mea ei.</p>
+            <button onclick="window.location.href='locations.html'" class="btn btn-secondary btn-lg" >Check our Locations</button>
+        </div>
+    </div>
+</div>
+    
+<!--Footer-->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+    <div class="container text-center text-md-left">
+        <div class="row">
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+                <h5 class="font-weight-bold text-uppercase mb-4">Diner Fresh</h5>
+                <p>Duo aperiri oblique ad, sale postulant sit cu. Has movet salutatus at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <h5 class="font-weight-bold text-uppercase mb-4">Quick Links</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <p>
+                            <a href="locations.html">Locations</a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="reserve.html">Reserve</a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="menu.html">Menu</a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="about.html">About</a>
+                        </p>
+                    </li>
+                </ul>
+          </div>
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <p><i class="fas fa-home mr-3"></i> City, State, 12345</p>
+                    </li>
+
+                    <li>
+                        <p><i class="fas fa-envelope mr-3"></i> name@email.com</p>
+                    </li>
+
+                    <li>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                    </li>
+
+                    <li>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </li>
+                </ul>
+            </div>
+
+          <hr class="clearfix w-100 d-md-none">
+
+          <div class="col-md-3 col-lg-3 text-center mx-auto my-4 social">
+
+            <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+            <a type="button" class="btn-floating btn-fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a type="button" class="btn-floating btn-tw">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a type="button" class="btn-floating btn-gplus">
+                <i class="fab fa-google-plus-g"></i>
+            </a>
+
+            <a type="button" class="btn-floating btn-dribbble">
+                <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="index.html"> dinerfresh.com</a>
+    </div>
+            
+</footer>
+
+<!--JQuerry-->
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+    $("#navBar").css("display", "none");
+    $(".slogan").css("display", "none");
+    $("#btn-1").css("display", "none");
+    $("#btn-2").css("display", "none");
+        
+    $("#navBar").slideDown(1500);
+    $(".slogan").fadeIn(2500);
+    $("#btn-1").fadeIn(3000);
+    $("#btn-2").fadeIn(3000);
+});
+                        
+</script>
+    
+</body>
+</html>
